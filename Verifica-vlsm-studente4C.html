@@ -1462,11 +1462,11 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
             </div>
             <div class="packet-field">
                 <span class="field-name">Source IP</span>
-                <span class="field-value" style="color: var(--accent-pink);">192.168.0.______  (IP di PC-Alfa2 — ora è la sorgente!)</span>
+                <span class="field-value" style="color: var(--accent-pink);">192.168.0.2  (IP di PC-Alfa2 — ora è la sorgente!)</span>
             </div>
             <div class="packet-field">
                 <span class="field-name">Destination IP</span>
-                <span class="field-value" style="color: var(--accent-pink);">192.168.0.______  (IP di PC-Alfa1 — ora è la destinazione!)</span>
+                <span class="field-value" style="color: var(--accent-pink);">192.168.0.1  (IP di PC-Alfa1 — ora è la destinazione!)</span>
             </div>
         </div>
         <div class="packet-layer">
@@ -1516,7 +1516,7 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
                     PC-Alfa1 > Command Prompt
                 </div>
                 <div class="code-body">
-<span class="cmd">C:\&gt;</span> ping <span class="placeholder">192.168.0.2</span>  <span class="comment">&lt;-- IP di PC-Beta1</span>
+<span class="cmd">C:\&gt;</span> ping <span class="placeholder">192.168.0.65</span>  <span class="comment">&lt;-- IP di PC-Beta1</span>
 
 <span class="output">Pinging 192.168.0.1 with 32 bytes of data:</span>
 
@@ -1544,9 +1544,7 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
     </div>
 
     <div class="img-placeholder">
-        <div class="icon">❌</div>
-        <div class="label">[IMG_19] — Output del comando ping da PC-Alfa1 verso PC-Beta1 (fallimento - Request timed out)</div>
-        <div class="hint">Cattura il Command Prompt di PC-Alfa1 con il ping fallito verso un IP della Rete Beta</div>
+        <img src="IMG_18.png" alt="Cattura il Command Prompt di PC-Alfa1 con il ping fallito verso un IP della Rete Beta" style="max-width:100%; border-radius:8px; box-shadow:0 1px 3px rgba(0,0,0,0.1);">
     </div>
 
     <h3>Analisi nella Simulation Mode del ping fallito</h3>
@@ -1569,9 +1567,7 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
     </div>
 
     <div class="img-placeholder">
-        <div class="icon">🚫</div>
-        <div class="label">[IMG_20] — Simulation Mode: il pacchetto da PC-Alfa1 verso PC-Beta1 viene scartato (X rossa)</div>
-        <div class="hint">Cattura la topologia in Simulation Mode mostrando la X rossa sul pacchetto scartato</div>
+        <img src="IMG_19.png" alt="Cattura la topologia in Simulation Mode mostrando la X rossa sul pacchetto scartato" style="max-width:100%; border-radius:8px; box-shadow:0 1px 3px rgba(0,0,0,0.1);">
     </div>
 
     <div class="step">
@@ -1588,9 +1584,7 @@ Default Gateway: <span class="comment">(lasciare vuoto)</span>
     </div>
 
     <div class="img-placeholder">
-        <div class="icon">📋</div>
-        <div class="label">[IMG_21] — PDU Information del pacchetto scartato: motivo dello scarto</div>
-        <div class="hint">Cattura la finestra PDU che mostra il messaggio di errore o la spiegazione dello scarto</div>
+        <img src="IMG_20.png" alt="Cattura la finestra PDU che mostra il messaggio di errore o la spiegazione dello scarto" style="max-width:100%; border-radius:8px; box-shadow:0 1px 3px rgba(0,0,0,0.1);">
     </div>
 
     <div class="exercise-box">
